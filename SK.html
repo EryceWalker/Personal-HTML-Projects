@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E8A317;
+  padding: 10px;
+  font-family: comic sans ms;
+}
+
+/* Center website */
+.main {
+  max-width: 2000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: maroon;
+  outline: none;
+  padding: 12px;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn.active {
+  background-color: darkred;
+  color: white;
+}
+</style>
+</head>
+<body>
+        
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<title>MurderMedia</title>
+<h1 style="font size: 100%; color: maroon; font-family: comic sans ms"><ins><center>MurderMedia</h1></ins></center>
+<center><p style="font-family: comic sans ms">By u/GamerGirl-07</center></p>
+
+<h2 style="font size=50%; color: black; font-family: comic sans ms"><center>Hii y'all. I've tried to compile all the murderers ik of into this website. this is prolly gonna b super amatuer bcuz I ain't that much of an expert in coding or html. But I had nothing useful to occupy my time w/ so I made this. Hope y'all like it</center></h2>
+
+<center><div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('All')">All</button>
+  <button class="btn" onclick="filterSelection('Assassinations')">Assassinations</button>
+  <button class="btn" onclick="filterSelection('Juveniles')">Juveniles</button>
+  <button class="btn" onclick="filterSelection('Serial Killers')">Serial Killers</button>
+  <button class="btn" onclick="filterSelection('Baby/Toddler Killers')">Baby/Toddler Killers</button>
+  <button class="btn" onclick="filterSelection('Unsolved')">Unsolved</button>
+  <button class="btn" onclick="filterSelection('Missing People')">Missing People</button>
+  <button class="btn" onclick="filterSelection('In Self - Defence')">In Self - Defence</button>
+  <button class="btn" onclick="filterSelection('Massacers')">Massacers</button>
+  <button class="btn" onclick="filterSelection('Hijackings')">Hijackings</button>
+  <button class="btn" onclick="filterSelection('Ongoing Cases')">Ongoing Cases</button>
+  <button class="btn" onclick="filterSelection('Honor Killings')">Honor Killings</button>
+  <button class="btn" onclick="filterSelection('Others')">Others</button>
+</div></center>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Juveniles">
+    <div class="content">
+      <a href="https://www.youtube.com/watch?v=bn8N_8blfMg"><img src="https://alchetron.com/cdn/mary-bell-33dde387-2bb6-4e07-bdfc-20f64ce1247-resize-750.jpeg" alt="Juveniles" style="width:100%"></a>
+      <center><ins><h4 style="font-family: comic sans ms">Mary Bell</h4></center></ins>
+      <center><p style="font-family: comic sans ms">11 yo Mary Flora Bell strangled 2 pre school age boys to death in 1968 but she was found not guilty on account of diminished responsibility</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles, Ongoing Cases">
+    <div class="content">
+    <img src="https://www.the-sun.com/wp-content/uploads/sites/6/2021/05/NINTCHDBPICT000652725123-1.jpg" alt="Juveniles" style="width:100%">
+      <center><ins><h4 style="font-family: comic sans ms">Aiden Fucci</h4></center></ins>
+      <center><p style="font-size=25%; font-family: comic sans ms">(Ongoing Case)</p></center>
+      <center><p style="font-family: comic sans ms">14 yo Aiden Sean Fucci killed 13 yo Tristyn Baily by stabbing her 114 times in April 2021</p></center>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=aWclRSulGFQ"><img src="https://listverse.com/wp-content/uploads/2018/03/Rod-Ferrell-featured-1200x720.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Rod Ferrell</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yo Roderrick Justin "Rod" Ferrell was an American murderer & cult leader. He was the leader of a loose - knit delusional gang of teenagers from Kentucky called the "Vampire Clan". He killed his friend's parents after his friend said that they were abusive for which he got life in prison without parole</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=2odoC53uCcc"><img src="https://res.feednews.com/assets/v2/53a6f233c76efa9416d96abb6ba5aec7?width=1280&height=720&quality=hq&category=us_News_Society" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Erick Almandinger & his friend group</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yo Erick & his friends killed 16 yo David Grunwald allegedly because David smoked all their weed, near Knik River in Alaska in 2016</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Vi1nld9wpqg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6MjG6mPIFloxTqeRBZeXPhj0QrvUjjziO5A&usqp=CAU" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Boy A & Boy B (in the murder of Ana Kriegel)</center></h4></ins>
+      <center><p style="font-family: comic sans ms">Anastasia "Ana" Kriégel was a 14 yo Russian - Irish girl who was subject to a violent attack, murder & sexual assault in an abandoned house by 2 13 yo boys in May 2018 near Dublin. They're the youngest known killers in modern Irish history</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=EqvBFXcj4q8"><img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2022/02/tyler-hadley.jpeg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Tyler Hadly</center></h4></ins>
+      <center><p style="font-family: comic sans ms">Tyler Hadly killed his parents while high to throw a house party. He got arrested & got a life sentence for it</center></p>
+    </div>
+  </div>
+   <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=3ZNxBbRb2Co"><img src="https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--mobile/public/pauline-parker-juliet-hulme-getty.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Parker - Hulme Murder Case</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yo Pauline Parker & her friend 15 yo Juliet Hulme killed Pauline's mom Hanorah Reiper in Christchurch, NZ in 1954. They spent 5 years in jail before being released</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles, Ongoing Cases">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=VyaYvKeEiNw"><img src="https://static.onecms.io/wp-content/uploads/sites/20/2021/06/10/aaron-guerrero-sierra-halseth.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Aaron Guerrero & Sierra Halseth</center></h4></ins>
+      <center><p style="font-size=25%; font-family: comic sans ms">(Ongoing Case)</p></center>
+      <center><p style="font-family: comic sans ms">16 yo Sierra Halseth & her 18 yo boyfriend Aaron Guerreo stabbed Sierra's dad Daniel Halseth to death & set his body on fire. They haven't been sentenced yet</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=0Liupgs_fXU"><img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2021/12/robert-thompson-and-john-venables-being-booked.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>John Venables & Robert Thompson</center></h4></ins>
+      <center><p style="font-family: comic sans ms">The 2 10 yo boys abducted the 2 yo James Bulger, tortured him, killed him & dumped his body on train tracks in February of 1993. They were both released when they turned 18 & were the youngest people in modern British history to be convicted of murder.</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=obwGbtgOjJY"><img src="https://images.saymedia-content.com/.image/t_share/MTc0NjQxMTE2NDk3NzE3MjM4/murderous-children-alyssa-bustamante.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Alyssa Bustamante</center></h4></ins>
+      <center><p style="font-family: comic sans ms">15 yo Alyssa Bustamante killed 9 yo Elizabeth Olten in October of 2009 & it was "ahmazing". She got convicted & senteced to life + 30 years in prison with the possibilty of parole in 2044</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=3qn10BI87h8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhco9XsSCk6LRq-xkS-XSO2kgGlJ0RAjqnI3IY-n32CulnFYn_dmH_Tun_edObYYH8ZLA&usqp=CAU" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Lorraine Thorpe: Britain's Youngest Female Double Murderer</center></h4></ins>
+      <center><p style="font-family: comic sans ms">15 yo Lorraine Thorpe killed her dad Desmond Thrope & a woman called Rosalyn Hunt in 2009. She was convicted, found guilty & sentenced to a minimum of 14 years in jail.</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=ZcLMVk5bjbY"><img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/16976/production/_90843529_ryanherbertbrendanharris.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Ryan Herbert & Brendan Harris</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yo Ryan Herbert, 15 yo Brendan Harris & their friends attacked Sophy Lancaster & her boyfriend Robert Maltby in a park in Bacup allegedly for dressing goth. Sophy would laster die from her injuries & as a result both boys were found guilty of murder & sentenced to life in prison with the possibility of parole after 18 & 16 years.</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=BA_bPQoMl_k"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Joshua_Phillips.jpg/220px-Joshua_Phillips.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Josh Philips</center></h4></ins>
+      <center><p style="font-family: comic sans ms">14 yo Josh Philips killed his 8 yo neighbor & friend Maddy Clifton & hid her body under his waterbed for a week before being caught. He got life imprisonment without the possibility of parole</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=orsBdr63XyY"><img src="https://pbs.twimg.com/media/BBOku8kCQAA4DAY.png" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Ronald Sanford</center></h4></ins>
+      <center><p style="font-family: comic sans ms">13 yo Ronald Sanford & his friend 15 yo Sean Rowe killed 2 elderly women in August 1987 for which both effectively got life in prison without parole</center></p>
+    </div>
+  </div>
+    <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=WnHEiBlrgq8"><img src="https://preview.redd.it/069jmdad1b371.jpg?width=450&format=pjpg&auto=webp&s=d4525fe5c8ccd00965a3a015bedcb379015abb51" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Daniel Patry</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yo Brazilian Daniel Petry tortured, raped & killed his 12 yo neighbor Gabriel Kuhn in June 2007 after allegedly being scammed by Gabriel in an online game, for which he only got 3 years in jail</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=1VZRmKdAa8I"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajsD6juWdWHWZ9ZynMNdQtUZ8WsZOyK_4F8PGQ-xDt3etKqLKvHkUDf-eH9H4dsLWzWM&usqp=CAU" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Lionel Tate</center></h4></ins>
+      <center><p style="font-family: comic sans ms">12 yo Lionel Tate is the youngest ever American citizen to be sentenced to life in prison without parole after killing 6 yo Tiffany Eunick</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=v7aDqv8w2xc"><img src="https://www.voxbliss.com/wp-content/uploads/2021/09/Shelia-Eddyy-1000x563.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Sheila Eddy & Rachel Shoaf</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yos Sheila Eddy & Rachel Shoaf killed their 16 yo friend Skyler Neese so that their lesbian sexualities remained a secret & because they "didn't wanna be friends with her anymore". Sheila plead guilty to 1st degree murder & got life in prison with the possibility of parole after 15 years while Rachel plead guilty to 2nd degree murder & got 30 years with the possibility of parole after 10 years.</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=7KtqEccq3GY"><img src="https://www.ladbible.com/cdn-cgi/image/width=1200,quality=70,format=jpeg,fit=contain,dpr=1/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2Fe89ec921616d7a7768cb7886fea094a8.png" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>The Scream Killers</center></h4></ins>
+      <center><p style="font-family: comic sans ms">16 yos Brian Draper & Tory Adamcik stabbed their 17 yo friend Cassy Jo Stoddart to death in September 2006 after allegedly being inspired by the movie Scream. Both got life in prison without parole</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=CHuJD83orYQ"><img src="https://www.davisenterprise.com/files/2013/09/Marsh-Daniel-newW.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Daniel Marsh</center></h4></ins>
+      <center><p style="font-family: comic sans ms">15 yo Daniel William Marsh, who had a history of anti - social & violent behavior, tortured & killed an elderly couple in California in April 2013. He was convicted & tried as an adult & got 52 years to life in prison with the possibility of parole after 25 years.</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=ejf_2DrPo4A"><img src="https://i.dailymail.co.uk/i/pix/2012/07/03/article-0-13D66E40000005DC-731_306x404.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Alex Crain</center></h4></ins>
+      <center><p style="font-family: comic sans ms">14 yo Alexander Crain shot his parents to death while sleepwalking in 2010 for which he got 20 years in jail & 10 years probation after being tried as an adult</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=ShTaJQ8XsZ8"><img src="https://static.onecms.io/wp-content/uploads/sites/20/2015/12/philip-chism-435.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Philip Chism</center></h4></ins>
+      <center><p style="font-family: comic sans ms">14 yo Philip Chism sexually assaulted & killed his maths teacher Colleen Ritzer in October 2013 for which he was sentenced to atleast 40 years in jail</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=8LcIuVTAXso"><img src="https://i.guim.co.uk/img/media/cc24ca1d7237d7b7a76b5489ee77f185a2061865/0_208_3605_2163/master/3605.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7f2d7a60c667e6e3dee53fa8a0ad2775" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>William Cornick</center></h4></ins>
+      <center><p style="font-family: comic sans ms">15 yo William Cornick stabbed his Spanish teacher Ann Macguire to death in April 2014 for which he got life in prison with the possibility of parole after 20 years</center></p>
+    </div>
+  </div>
+   <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=HGMXuIxiMFE"><img src="https://i.guim.co.uk/img/media/9e477b3e43ef5cb70cc7fc09f6b475cdb0925c1e/0_48_1889_1133/master/1889.jpg?width=700&quality=85&auto=format&fit=max&s=bafd97405ab61ea7803c5deb1d04be6e" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>James Fairweather</center></h4></ins>
+      <center><p style="font-family: comic sans ms">15 yo wannabe serial killer James Fairweather stabbed 2 people to death in Essex in 2014 for which he got life in prison with the possibility of parole after 27 years</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=C60gDNUNoak"><img src="https://ichef.bbci.co.uk/news/464/mcs/media/images/74717000/jpg/_74717381_murdercomposite.jpg" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>The Liverpool Laundromat Killings</center></h4></ins>
+      <center><p style="font-family: comic sans ms">5 teens (ages 12 - 15) stabbed 19 yo Sean McHugh to death in a laundromat Ansfield in September 2013 for which they got sentenced ranging from 6 - 12 years</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=56k053wB3XU"><img src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/ibmig/cms/image/wesh/21455076-21455076.jpg?resize=900:*" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Amber Wright, Charly Ely & their friends</center></h4></ins>
+      <center><p style="font-family: comic sans ms">5 teens (ages 15 - 20) tortured & shot 15 yo Seath Jackson to death in Florida in the summer of 2011 after his 15 yo ex - girlfriend Amber Wright lured him to come to meet her. They got sentences ranging from life in prison without parole to the death penalty</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles, Ongoing Cases">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=pzM5THNAHIE"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BW7qHd0SyOnmGLIIkHPxPshFCqBiBhz_2StfB3s05HitB0kG4aZ3qpsv4HRTmYzcWnQ&usqp=CAU" alt="Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Alaska Teen Hitman Tragedy</center></h4></ins>
+      <center><p style="font-size=25%; font-family: comic sans ms">(Ongoing Case)</p></center>
+      <center><p style="font-family: comic sans ms">18 yo Denaly Brehmer, 19 yo Caleb Leyland, 16 yo Kayden McIntosh & 2 other kids stabbed Denaly's best friend 19 yo Cynthia Hoffman (who had the mental capacity of a 12 yo due to a mental disability) to death after being catfished online by 21 yo Darin Schilmiller</center></p>
+    </div>
+  </div>
+  <div class="column Juveniles, Ongoing Cases">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=-h87LL6dwj4"><img src="https://i.dailymail.co.uk/1s/2021/02/23/17/39675274-9291679-image-m-7_1614100988610.jpg" alt="Juveniles, Ongoing Cases" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Claire Miller</center></h4></ins>
+      <center><p style="font-size=25%; font-family: comic sans ms">(Ongoing Case)</p></center>
+      <center><p style="font-family: comic sans ms">14 yo Claire Elaina Miller killed her 19 yo disabled wheelchair - bound sister in Pensylvania in February 2021</center></p>
+    </div>
+  </div>
+  
+  <div class="column Serial Killers">
+    <div class="content">
+      <a href="https://www.youtube.com/watch?v=h814QNnDZgw"><img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Jeffrey_Dahmer_Milwaukee_Police_1991_mugshot.jpg" alt="Serial Killers" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Jeffrey Dahmer</center></h4></ins>
+      <center><p style="font-family: comic sans ms">Jeffrey Lionel Dahmer (aka the Milwaukee Cannibal) was an American serial killer & registered sex offender who committed murders & dismemberment of 17 men & boys between 1978 & 1991</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=kUrwRrhslRU"><img src="https://upload.wikimedia.org/wikipedia/en/5/51/Dennis_Nilsen.jpg" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Dennis Nilsen</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Dennis Andrew Nilsen was a Scottish serial killer & necrophile who murdered at least 12 young men and boys between 1978 & 1983 in London</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=nB8TJ_cS-sc"><img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/01/mug-shot-of-albert-fish.jpg" alt="Serial Killers" style="width:100%"></a>
+      <ins><center><h4 style="font-family: comic sans ms">Albert Fish</center></ins></h4>
+      <center><p style="font-family: comic sans ms">Hamilton Howard "Albert" Fish was an American serial killer, rapist, child molester & cannibal who committed a minimum of 3 child murders from July 1924 to June 1928. He was also known as the Gray Man, the Werewolf of Wysteria, the Brooklyn Vampire, the Moon Maniac & The Boogy Man.</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+      <a href="https://www.youtube.com/watch?v=q55YLabSe9A/"><img src="https://c.ndtvimg.com/2020-08/3epunc9c_golden-state-killer-joseph-deangelo-jr_120x90_19_August_20.jpg" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Joseph James DeAngelo</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Joseph James DeAngelo Jr. is an American serial killer, serial rapist, burglar & former police officer who committed at least 13 murders, 50 rapes & 120 burglaries across California between 1974 & 1986</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Ai8L7vUs7vQ"><img src="https://allthatsinteresting.com/thumb/1200.633.https://allthatsinteresting.com/wordpress/wp-content/uploads/2017/12/richard-ramirez-mugshot.jpg" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Richard Ramirez</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Ricardo "Richard" Leyva Muñoz Ramírez (aka the Night Stalker) was an American serial killer, serial rapist, kidnapper, child molester & burglar whose crime spree took place in California between June 1984 & August 1985</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=cny_slm2a8U"><img src="https://fyooyzbm.filerobot.com/v7/https://static01.nicematin.com/media/npo/xlarge/2020/11/maxmatinarch524773-e1605877052180.jpg?w=480&h=382&gravity=auto&func=crop" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Michel Fourniret</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Michel Paul Fourniret was a French serial killer who confessed to killing & raping 12 people in France & Belgium between 1987 & 2003</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=m9EYSjqAM98"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Israel_Keyes_FBI_mugshot.jpg" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Israel Keyes</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Israel Keyes was an American serial killer, bank robber, burglar, arsonist, kidnapper, rapist & necrophile who killed atleast 3 victims across the US from June 2011 to April 2012. While awaiting trial, Keyes committed suicide by hanging & slashing his wrists</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=L8ZltkKOpAs"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8lilFu9-DPkBxieH3eoe2XYj0jJO8WEMnH9SlozRkaw8he14d0PYjbjAf6okZgPPAeM&usqp=CAU" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>John List</ins></center></h4>
+      <center><p style="font-family: comic sans ms">John Emile List was an American murderer & long - time fugitive. In November 1971, List killed his wife, mom & 3 kids at their home in Westfield, New Jersey & then disappeared. He had planned the murders so meticulously that nearly a month passed before anyone suspected that anything was amiss. He was eventually caught 17 years later & sentenced to 5 consecutive life terms in prison.</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=rA9eUVHEKy4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9L5DuIcRl3ZDTN0Bv4qzwfIsBL3L-1gfm7Dsto7MQqG6q4Is6dFGORerxrKOtdaXIYUA&usqp=CAU" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Gilles de Rais</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Baron Gilles de Rais was a knight & lord of Brittany, Anjou & Poitou, a leader in the French army & a companion to Joan of Arc. He's best known for his reputation & later conviction as a confessed serial killer of children for which he was beheaded</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=lZXH80L0rT4"><img src="https://www.ripleys.com/wp-content/uploads/2017/05/Original_1580_Portrait_of_Elizabeth_Bathory_with_signature_1479x2140-copy.jpg" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Elizabeth Bathory</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Countess Elizabeth Bathory de Ecsed was a Hungarian noblewoman & purported serial killer. She & 4 of her servants were accused of torturing & killing hundreds of girls & young women between 1590 & 1610</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=8BgcquiwYVI"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkj5VlDxuZlXVP3u0X5u8yjC9VnGhHJZ8Gbsv-ivLcJq2bZ9D-CmyG7zNbbF_ttosXw64&usqp=CAU" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Anatomy Killers</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Scottish doctors William Burke & William Hare killed around 16 people over 10 months in 1828 in Edinburgh to sell the bodies to Dr. Robert Knox who used it for his anatomical lectures. William Burke was found guilty & sentenced to death while William Hare managed to escape punishment by agreeing to testify against his accomplice</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Ib_RtTkTn38"><img src="https://preview.redd.it/7av1xuj8lty71.jpg?auto=webp&s=5813597522ebbf2b81aac3fc815da440b16d18eb" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Robert Maudsly</ins></center></h4>
+      <center><p style="font-family: comic sans ms">British serial killer Robert Maudsly killed 4 men, 3 of them while serving a life sentence for the 1st murder & 2 of the victims were serving time for child molestation. He was soon deemed too dangerous for regular prison & so the authorities constructed a special cell for him in which he's in solitary confinement to this day</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=NQ8eKB5fJRk"><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/10/26/12/brady-hindley.jpg?width=1200" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Moors Murders</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Ian Brady & his girlfriend Myra Hindly killed 5 children aged 10 - 17, atleast 4 of whom were sexually assaulted, between July 1963 & October 1965. They were sentenced to life in prison without parole</center></p>
+    </div>
+  </div>
+   <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=TiRB8qkfdk4"><img src="https://preview.redd.it/6mh0azarjwd61.jpg?auto=webp&s=904ce5e0838d6509ae93629ebc2e5fb2960fa8b7" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>H. H. Holmes</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Dr. Henry Howard Holmes was an American con artist & serial killer who killed 9 people between 1891 & 1896 for which he was sentenced to death</center></p>
+</div></div>
+<div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=3-KVuVjmjmU"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBcGAnrNCuZr0zn3d69LBtD5HLdvdor9CF8gBBShSqSN8HUQEVqj4gIE6v6EP88031Eg&usqp=CAU" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Harold Shipman</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Scottish doctor Harold Frederick "Fred" Shipman killed 15 patients under his care in the late 90s for which he was sentenced to life in prison without the possibility of parole. He committed suicide by hanging a day before his 58th birthday in January 2004/center></p>
+    </div>
+  </div>
+<div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=OjB3JUkggoQ"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvgt1Ro29Dvy4lIacvJGUBrTTdhI0GonTi8cqxgssqxvBtLo8ZfrvVjKxQn1Fw_ChauOU&usqp=CAU" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Javed Iqbal</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Javed Iqbal Umayr killed around a 100 homeless runaway boys living on the streets of Pakistan for which he was sentenced to death. However he & his 17 yo accomplice (who also had been sentenced to death) committed suicide by hanging a day before their execution</center></p>
+</div></div>
+<div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=DZPobnwXww8"><img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQDngl4v-uSW06Y9iIlRF_7Xcgq73D_9hJ_D3wNR_JiCcKpzbb4574tHWhlt-cb" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Dennis Rader - The BTK Killer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Dennis Lynn Rader (aka the BTK Killer) killed 10 people in Kansas between 1974 & 1991 & sent taunting letters to police & newspaper agencies describing the details of his crimes. He got 10 consecutive life sentenced without the possibility of parole.</center></p>
+    </div>
+  </div>
+   <div class="column Serial Killers, Juveniles">
+        <div class="content">
+        <a href="https://en.wikipedia.org/wiki/Academy_maniacs"><img src="https://images.theabcdn.com/i/38638123" alt="Serial Killers" style="width:100%"></a>
+        <h4 style="font-family: comic sans ms"><center><ins>The Academy Maniacs</ins></center></h4>
+<center><p style="font-family: comic sans ms">Artyom Anoufriev & Nikita Lytkin (aka The Academy Maniacs) were 2 teenage serial killers from Irkutsk, Russia who killed 15 people after being inspired by The Dnepropetrovsk Maniacs</center></p>
+</div>
+  </div>
+  <div class="column Serial Killers, Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=39_AeEsFZfU"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Jesse_Pomeroy.gif" alt="Serial Killers, Juveniles" style="width:100%"></a>
+      <ins><h4 style="font-family: comic sans ms"><center>Jesse Pomeroy</center></h4></ins>
+      <center><p style="font-family: comic sans ms">14 yo Jesse Harding Pomeroy was a teenage serial killer & the youngest person in Massachusetts to be convicted of 1st degree murder. He was caught after killing 10 yo Katy Curran in 1874 & initially sentenced to death but this was soon commuted to life in prison in solitary confinement.</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=G6Oyc-bkI9s"><img src="https://upload.wikimedia.org/wikipedia/en/7/73/Sayenko_suprunyuck.jpg" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Dnepropetrovsk Maniacs</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Dnepropetrovsk maniacs were Ukrainian 2 19 yo serial killers responsible for a string of murders in Dnipro in June & July 2007. The case gained additional notoriety because the killers made video recordings of some of the murders, with 1 of the videos leaking to the Internet (3 guys, 1 hammer)</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=7fuBDHgCHfQ"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-btN8RIYCRHO5Vx0qeCuPPmECNQEpRvA12jtGwFrblWEDAEmypBicllqcPj8PxG54pg&usqp=CAU" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Pedro Lopez</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Pedro Alonso López is a Colombian serial killer & child molester who sexually assaulted killed a minimum of 110 young girls from 1969 to 1980 & claimed to have killed over 300 victims across Colombia, Peru & Ecuador. He's currently a fugitive</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=t7wv6EVMmd8"><img src="https://static.wikia.nocookie.net/villains/images/c/c9/Monster10.jpg/revision/latest?cb=20140613040123" alt="Serial Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Aileen WWuornos</ins></center></h4>
+      <center><p style="font-family: comic sans ms">While working as a street prostitute, Aileen killed & robbed 7 of her male clients during 1989 - 1991 for which she was sentenced to death by lethal injection</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers, Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=lADBHDg-JtA"><img src="https://www.telegraph.co.uk/content/dam/news/2017/08/04/TELEMMGLPICT000001922625_trans_NvBQzQNjv4BqULJaPPT4jikhwJ1KFTYm4G4rEzCQoPh1TeFnPhLDNSU.jpeg" alt="Serial Killers, Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Jack the Ripper</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Jack the Ripper was an unidentified serial killer active in the impoverished districts in & around Whitechapel where he killed 5 prostitutes in 1888. In both official criminal case files & the contemporary journalistic accounts, the killer was called the Whitechapel Murderer & Leather Apron</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers, Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=xCuyPvfkmug"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Zodiac-Killer.jpg" alt="Serial Killers, Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Zodiac Killer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Zodiac Killer is the pseudonym of an unidentified serial killer who operated in Northern California in the late 1960s. The case has been described as the most famous unsolved murder case in American history. He has 5 confirmed kills to his name</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers, Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=DJQDaVuWrdI"><img src="https://upload.wikimedia.org/wikipedia/en/f/f4/CarmenColonWandaWalkowiczMichelleMaenzaRochesterNY1971to1973a.jpg" alt="Serial Killers, Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Alphabet Murders</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Alphabet Murders are an unsolved series of child murders which occurred between 1971 & 1973 in Rochester, New York. All 3 victims were girls aged 10 or 11 whose surname began with the same letter as that of their first name</center></p>
+    </div>
+  </div>
+  <div class="column Serial Killers, Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=ppcfGalDuoc"><img src="https://upload.wikimedia.org/wikipedia/en/3/31/John_Bittrolff.png" alt="Serial Killers, Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Long Island Serial Killer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The LISK is an unidentified serial killer who's believed to have killed 10 - 16 people over a period of nearly 20 years. Suspects include John Bittrolff (pictured above) & Joseph James DeAngelo, both of whom denied the claims</center></p>
+    </div>
+  </div>
+
+  <div class="column Baby/Toddler Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=glqsVrs6v1I"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F11%2Fbrooke-4-2000.jpg" alt="Baby/Toddler Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Brooke Skyler Richardson</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Brooke Skyler Richardson was a high school cheerleader who allegedly killed her own baby to hide her unintended pregnancy from everyone. She convicted but found not guilty</p></center>
+    </div>
+  </div>
+  <div class="column Baby/Toddler Killers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=nZkLaaw-pZI"><img src="https://c.files.bbci.co.uk/0654/production/_119802610_composite58.jpg" alt="Baby/Toddler Killers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Nicola Priest & Callum Redfern</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Nicola Priest & her boyfriend Callum Redfern killed their baby 3 yo Kayly Jade - Priest for which they got 15 years in jail after being found guilty of manslaughter</p></center>
+    </div>
+  </div>
+ <div class="column Baby/Toddler Killers, Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=V5B3tSORufA"><img src="https://www.oprah.com/g/image-resizer?width=670&link=https://static.oprah.com/images/tows/200611/20061103/20061103_102_284x218.jpg" alt="Baby/Toddler Killers, Juveniles" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Jessica Coleman</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Jessica was a 15 yo high schooler who allegedly killed her own baby to hide her unintended pregnancy from everyone. She faced no legal consequences & appeared on the Oprah Show</p></center>
+    </div>
+  </div>
+
+  <div class="column Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=YCnFYvL17v4"><img src="https://www.novelsuspects.com/wp-content/uploads/2021/03/A-Brief-History-of-The-Black-Dahlia_NovelSuspects.png?fit=1200%2C600" alt="Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Black Dahlia</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Elizabeth Short (posthumously known as the Black Dahlia) was an American woman found murdered in LA in January 1947. Her case became highly publicized due to the gruesome nature of the crime, which included the mutilation of her corpse, which was bisected at the waist</center></p>
+    </div>
+  </div>
+  <div class="column Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=RSl7Fk22wfc/"><img src="https://thoughtcatalog.com/wp-content/uploads/2018/03/screen-shot-2018-03-22-at-5-06-03-pm.png" alt="Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Sodder Children Disappearance</ins></center></h4>
+      <center><p style="font-family: comic sans ms">On Christmas Eve, 1945, a fire destroyed the Sodder residence in Fayetteville, West Virginia, United States. At that time, it was occupied by George Sodder, his wife Jennie & 9 of their 10 children. During the fire, George, Jennie & 4 of the 9 children escaped. The rest of the kids presumably didn't make it but their bodies were never found</center></p>
+    </div>
+  </div>
+  <div class="column Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=yda8zcCCx1Q"><img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Elisa_Lam_LAPD_flyer_photo.jpg" alt="Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Murder of Elisa Lam</ins></center></h4>
+      <center><p style="font-family: comic sans ms">In February 2013, the body of 21 yo Chinese - Canadian tourist Elisa Lam was discovered in a large cistern atop a hotel in downtown LA, where she had been a guest. She was last seen alive on January 31 & was reported missing by her parents on February 1</center></p>
+    </div>
+  </div>
+  <div class="column Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=V4RWDhwi9IY"><img src="https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2018/others/hemraj-wife-moves-to-sc-644x362_1534469505.jpg&w=900&height=601" alt="Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>2008 Noida Double Murder Case</ins></center></h4>
+      <center><p style="font-family: comic sans ms">This case refers to the unsolved murders of 14 yo Aarushi Talwar & a live in domestic manservant Hemraj Banjade (who was employed by Aarushi's parents) which happened in 2008 in Noida, India</center></p>
+    </div>
+  </div>
+    <div class="column Unsolved">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=YXvpFYxwQFY"><img src="https://cdn.cnn.com/cnnnext/dam/assets/190321164542-atlanta-child-murders.jpg" alt="Unsolved" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Atlanta Child Murders</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Atlanta murders of 1979–1981 (aka Atlanta child murders) was a series of 28 murders committed in Atlanta, Georgia between July 1979 & May 1981. Wayne Williams was arrested & sentenced to 2 consecutive life sentences for 2 of the murders. He was suspected of commiting the rest of the murders as well but was never tried for those, meaning 26 of the atlanta child murders remain unsolved to this day</p></center>
+    </div>
+  </div>
+
+  <div class="column Unsolved, Massacers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=n6kWYruZSAY"><img src="https://p.potaufeu.asahi.com/16dd-p/picture/24998039/02c7512aeee8baa42d3338adac081de6.jpg" alt="Unsolved, Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Miazawa (Setagaya) Family Massacer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Miazawa family was killed in December 2000 in Setagaya, Tokyo. Despite leaving many clues at the crime scene, the perpetrator has still not yet been caught.</center></p>
+    </div>
+  </div>
+  
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=zFUT9i2G0vk"><img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_13/3280966/alicia_navarro_closeup.png" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Alicia Navarro</ins></center></h4>
+      <center><p style="font-family: comic sans ms">14 yo autistic girl Alicia Navarro left her home in Glendale at night in September 2019, leaving a note that said she ran away. She still hasn't been found yet</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=f30w54xfxiI"><img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2021/06/young-asha-degree.jpeg" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Asha Degree</ins></center></h4>
+      <center><p style="font-family: comic sans ms">On Valentine's Day 2000, 9 yo girl Asha Degree left her family home & began walking along nearby Highway 18 despite heavy rain & wind for unknown reasons. She remains missing to this day.</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=2tNLPX5af34"><img src="https://upload.wikimedia.org/wikipedia/en/8/84/Amy_Lynn_Bradley.jpg" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Amy Lynn Bradly</ins></center></h4>
+      <center><p style="font-family: comic sans ms">24 yo American woman Amy Lynn Bradly went missing during a Caribbean cruise on the cruise ship Rhapsody of the Seas in March 1998 & remains missing to this day.</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=27TYy-W03OI"><img src="https://www.thestar.co.uk/webimg/b25lY21zOmZmMzRjODkzLTM0OGUtNDgyYy04MmY4LTc4MzU2OGNiMzNiYjo4ZjQwMjhhYS1lZmI5LTQwOGYtYTNkOC01ZTgwOTgyZTBlMTI=.jpg?width=2048&enable=upscale" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Andrew Gosden</ins></center></h4>
+      <center><p style="font-family: comic sans ms">14 yo Andrew Gosden left his home in Doncaster, withdrew £200 from his bank account & bought a 1 way ticket to London from Doncaster station. He was last seen on CCTV leaving King's Cross station.</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=ppxrcODRuAo"><img src="https://i0.wp.com/insidecroydon.com/wp-content/uploads/2022/02/z203-94Lee-Boxell.jpg?ssl=1" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Lee Boxell</ins></center></h4>
+      <center><p style="font-family: comic sans ms">15 yo Lee Boxell left went to meet a friend at 11am in Sutton. Lee & his friend spent a couple hours window shopping & parted company at 1pm after which he was never seen again</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=wo0NHPxkqOc"><img src="https://www.fbi.gov/wanted/kidnap/karlie-lain-guse/@@images/image/large" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Karly Guse</ins></center></h4>
+      <center><p style="font-family: comic sans ms">16 yo Karly Guse allegedly vanished an early morning in October 2018. Melissa, Karly's stepmom, said that she picked her up the night before from a nearby town around 8 p.m & that Karly was acting erratic & paranoid. She allegedly also told Melissa she had smoked marijuana earlier in the evening & wasn't feeling well</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=6xvCoCNoRw4"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Immaculate_Basil.jpg/220px-Immaculate_Basil.jpg" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Immaculate Basil</ins></center></h4>
+      <center><p style="font-family: comic sans ms">27 yo Immaculate "Macky" Basil vanished in 2013 from British Columbia after being last seen with her cousin and another man leaving a house party</center></p>
+    </div>
+  </div>
+  <div class="column Missing People">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=W3giTmZC-8Q"><img src="https://disappearedblog.com/wp-content/uploads/2021/02/scottkleeschulte.jpg" alt="Missing People" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Scott Kleeschulte</ins></center></h4>
+      <center><p style="font-family: comic sans ms">9 yo mentally challenged boy Scott Kleeschulte went to play in the woods near his home in St. Charles, Missouri in 1988 & was never seen again. A thunderstorm swept through the area soon after & no body was found. A redditor ALLEGEDLY confessed to see him die by falling off a cliff</center></p>
+    </div>
+  </div>
+
+<div class="column Others">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Murder_of_Junko_Furuta"><img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/01/junko-furuta.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Junko Furuta - The Girl who Spent 44 Days in Hell</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Junko Furuta was a Japanese high school student who was abducted, raped, tortured & murdered in the late 1980s by teenage boys. Her murder case was called the 'concrete-encased high school girl murder case', due to her body being discovered in a concrete drum</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=lStoTnk90Gs"><img src="https://www.thesun.co.uk/wp-content/uploads/2021/08/NINTCHDBPICT000671629664.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Stuart Campbell</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Stuart Campbell kidnapped, sexually assaulted & killed his 15 yo neice Danielle Jones in Essex in 2001 for which he got life in prison for murder & sexual assault + 10 years for abduction, with the possibility of parole after 20 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=2lXPj5HET2U"><img src="https://www.thesun.co.uk/wp-content/uploads/2017/09/nintchdbpict000019143324.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Stuart Hazell</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Stuart Hazell killed his girlfriend's grand - daughter 12 yo Tia Sharp in London in August 2012 for which he got life in prison with the possibility of parole after 28 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=AMiXuL6vl4w"><img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2007/11/12/castree_256.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=f5b04486f59275b1e09bf7d4cd049b21" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Ronald Castry</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Ronald Castry killed 11 yo Lesly Molseed in 1975 in England for which an innocent 23 yo mentally disabled man Stefan Kiszko spent 16 years in jail before he was released & Ronald was caught & sentenced to life in prison without parole</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=X1ncuW-bLsw"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/menendez-bros-headers-1505845352.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Menendez Brothers</ins></center></h4>
+      <center><p style="font-family: comic sans ms">In this controversial case, 21 yo Lyle & his brother 18 yo Eric Menendez killed their parents, allegedly as self defence from sexual abuse, in Beverly Hills in 1989 for which they got life in prison without parole</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=cwcy3ssfqxQ"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmilqp2TSd6bEs8vpFMW8RBg7Ue4kgdMsvJPBiJ7hRFPfEEVRGG02akMbwZK6HrtF2Oc0&usqp=CAU" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Jason Arrant & Brian Radel</ins></center></h4>
+      <center><p style="font-family: comic sans ms">These 2 24 yo men were manipulated into stabbing Jason's 16 yo girlfriend's (Rachelle Waterman) allegedly abusive mom to death in Alaska in November 2004 for which Brian got an effective life sentence with the possibility of parole after 33 years, Jason got 50 years in jail with the possibility of parole after 16 years & Rachelle got only 3 years in jail</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=GA365XuCNVA"><img src="https://www.bigcountryhomepage.com/wp-content/uploads/sites/56/2021/06/MicrosoftTeams-image-5-1.jpg?w=410" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Shawn Adkins</ins></center></h4>
+      <center><p style="font-size=25%; font-family: comic sans ms">(Ongoing Case)</p></center>
+      <center><p style="font-family: comic sans ms">Shawn Casy Adkins killed his girlfriend's 13 yo daughter Haily Dunn in December 2010 for which he was arrested only in December 2021, 11 years after killing Haily</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=1J2YOLQM2Yc"><img src="https://i0.wp.com/www.monstersandcritics.com/wp-content/uploads/2020/09/Rafferty-and-McClintic.jpg?resize=773.5%2C435&ssl=1" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Michael Rafferty & Terry - Lynne McClintic</ins></center></h4>
+      <center><p style="font-family: comic sans ms">They kidnapped, raped & killed 9 yo Victoria "Tory" Strafford in 2009 in Canada for which they got life in prison with the possibility of parole after 25 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=4xjLJPGOI8o"><img src="https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/BVEAWS3MXFECFF4DBV3KTAU5NE.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Leopold & Loeb</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Neighborhood rich kids Leopold & Loeb (aged 18 & 19 then) kidnapped & killed 14 yo Bobby Franks in Chicago in 1924 as their "perfect crime". Both young men were sentenced to life in prison + 99 years. Loeb was killed by a fellow inmate in 1936 & Leopold was released on parole in 1958</center></p>
+    </div>
+  </div>
+    <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=tWi0O7oLzHA"><img src="https://misteridthecnocaos.files.wordpress.com/2015/10/images1.jpeg?w=234&h=297" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Hello Kitty Murder Case</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Hello Kitty murder was a 1999 case in which a nightclub hostess called Fan - Man Yee was abducted & tortured in an apartment by 3 men & 1 girl before dying a month later in Hong Kong for stealing a wallet owned by 1 of her frequent customers</center></p>
+    </div>
+</div>
+<div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Q9vVqCxhCWA"><img src="https://miro.medium.com/max/1400/1*_R3J-hM6TJ8GfOViQFWkQQ.jpeg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Jennifer Pan</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Jennifer Pan is a Vietnamese - Canadian woman who was convicted of a 2010 kill - for - hire attack targeting both of her parents, killing her mom & injuring her dad. She said the crime was response to their fierce "tiger parenting" into her mid - 20s</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=N274EurzpAA"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Jodi_Arias_%28inmate%29.png/220px-Jodi_Arias_%28inmate%29.png" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Jody Arias</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Jody Ann Arias stabbed her ex - boyfriend to death. She claimed that she killed him in self defence but changed her story many times which serverely damaged her credibility. She was convicted in 2013 & sentenced to life in prison without parole in 2015</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=G4Q-iTyX7qo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3oq2xFOeXD5NUN1GL4ekAAa1V0S4kFC41kWRCwqRBAQnN6LfiC0lwCfpSbqJaqDAscHM&usqp=CAU" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Tracy Andrews</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Tracy Andrews killed her fiancé, Lee Raymond Dean Harvey in December 1996. She was sentenced to life imprisonment after being found guilty of murder at her trial in July 1997 & served 14 years before being released on parole</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=w6TfUfpt0lY"><img src="https://i.guim.co.uk/img/media/7b97fa2270c29691d52aacd9a14d7bc02b94ecee/0_55_3302_1981/master/3302.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=d62d0841dfe8b44772f0037468d9e081" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Stephen Beadman & Luke Harlow</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Luke groomed & lured 15 yo Kayleigh Haywood online, got her drunk at his house, sexually assaulted & killed her in 2015 with the help of his friend Stephen Beadman. Luke was sentenced to 12 years in jail while Stephen got life in prison but he died in April 2021</center></p>
+    </div>
+  </div>
+ <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=VV43ezxdg5M"><img src="https://live-production.wcms.abc-cdn.net.au/fc9c9bb91e875579e87a79be06ed91e6?impolicy=wcms_crop_resize&cropH=575&cropW=1024&xPos=0&yPos=0&width=862&height=485" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Gary Francis Newman</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Pedophile Gary Francis Newman lured 15 yo Carly Ryan online, sexually assaulted & killed her in 2007 with the help of his teenage sons. He was caught, convicted & sentenced to life in prison with the possibility of parole after 29 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=hVKczxIJST8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJL4z9zFvGa2PyHP3MO9rAB4V5nQ5G2ycUGJlSjs6ZADlm5N_YZB3W-nuqUbh9Rh8lJFU&usqp=CAU" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Arnis Zalkalns</ins></center></h4>
+      <center><p style="font-family: comic sans ms">41 yo Latvian Arnis Zalkans sexually assaulted & killed 14 yo anorexic girl Alice Gross in August 2014 after which he committed suicide.</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=TZDlsa8W9kc"><img src="https://s2.reutersmedia.net/resources/r/?m=02&d=20090511&t=2&i=10062020&w=&fh=545px&fw=&ll=&pl=&sq=&r=2009-05-11T165243Z_01_BTRE54A1AW100_RTROPTP_0_US-BRITAIN-WEBMURDER-life" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>David Heiss</ins></center></h4>
+      <center><p style="font-family: comic sans ms">21 yo German David Heiss killed 20 yo British student Matthew Pyke in September 2008 after being obsessed with Matthew's live in girlfriend 21 yo Joanna Witton over the internet. He was convicted & sentenced to life in prison with the possibility of parole after 18 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=bosT7C10zSQ"><img src="https://cbsnews2.cbsistatic.com/hub/i/r/2012/02/09/bb835c7d-a644-11e2-a3f0-029118418759/thumbnail/1200x630/2f2fc0e0d355976f6674ad6dcbf076ab/Twitchell_Star-Wars.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Mark Twitchell</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Mark Andrew Twitchell is a former Canadian filmmaker, convicted of 1st degree murder in April 2011 for killing John Brian Altinger. His trial attracted particular media attention because Twitchell had allegedly been inspired by the fictional character Dexter Morgan. He was sentenced to life in prison with the possibility of parole after 25 years</center></p>
+    </div>
+  </div>
+   <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=dbI_KF2mpOg"><img src="https://s.abcnews.com/images/US/william-riley-gaul-mugshot-ap-jef-180912_hpEmbed_11x14_992.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>William Rily Gaul</ins></center></h4>
+      <center><p style="font-family: comic sans ms">College student William Rily Gaul shot his 16 yo ex - girlfriend & high school cheerleader Emma Walker to death in her sleep after becoming obsessed with her. He got life in prison with the possibility of parole after 51 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Vyb4fOBMWds"><img src="https://upload.wikimedia.org/wikipedia/en/d/da/Luka_Rocco_Magnotta_mugshot.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Luka Magnotta</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Luka Magnotta killed a college student called Jun "Justin" Lin & fled to Canada after a video of the murder was posted online, prompting an international manhunt for him. He was eventually arrested in Berlin & sentenced to life in prison with the possibility of parole after 25 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Qb3uXJ4Py9Q"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFbnb23ntol6OFQu6Wk2GxGbN-_Q3RfglNc16ElskLZ4wtqueROWMeiALyCK9xLM8sEoY&usqp=CAU" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Chandler Halderson</ins></center></h4>
+      <center><p style="font-family: comic sans ms">23 yo Chandler Halderson killed his parents in July 2021 in Wisconsin for which he got life in prison without parole</center></p>
+    </div>
+  </div>
+    <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=q27wPmCRAUg"><img src="https://ogden_images.s3.amazonaws.com/www.tribtoday.com/images/2019/01/23001620/012219...R-HOERIG-TESTIFY-2.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Claudia Hoerig</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Claudia Hoerig killed her husband Karl Hoerig & fled to Brazil. She was eventually extradited 9 years later & was sentenced to life in prison with the possibility of parole after 28 years</center></p>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Guaratuba_child_murders#:~:text=The%20Guaratuba%20child%20murders%2C%20also,of%20kidnapping%20followed%20by%20murder."><img src="https://www.maringamais.com.br/wp-content/uploads/2021/07/Beatriz-e-Celina-Abagge-640x427.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Celina Abagge & Beatriz Cordeiro Abbagge</center></h4></ins>
+      <center><p style="font-family: comic sans ms">The 2 women allegedly killed 6 yo Evandro Ramos Caetano & 8 yo Leandro Bossi & mutilated their bodies for which they received no punishment</p></center>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=qIft5Gfga98"><img src="https://ogden_images.s3.amazonaws.com/www.standard.net/images/2015/02/14091047/7123d79d1e423a6b9d3c06de046f417b-1200x799.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Victoria Mendoza</center></h4></ins>
+      <center><p style="font-family: comic sans ms">21 yo Victoria Ashly Mendoza stabbed her girlfriend Tawny Baird to death in April 2014 for which she got 16 years to life in prison</center></p>
+    </div>
+  </div>
+   <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=IMpaTDJgUhc"><img src="https://www.syracuse.com/resizer/GKHzHpLHs8cWDh-5UP8Cp82pr6M=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/N4Y76FNK2JG2TC4BYDMPXQOO34.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Brandon Clark</center></h4></ins>
+      <center><p style="font-family: comic sans ms">21 yo incel Brandon Andrew Clark stabbed 17 yo Bianca Devins to death in July 2019 & posted the pics of her body online in a discord server. He got 25 years to life in prison</p></center>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=mG7Cb_2DID4"><img src="https://denver.cbslocal.com/wp-content/uploads/sites/15909806/2013/08/isabella-guzman1.jpg?w=240" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Isabella Guzman</center></h4></ins>
+      <center><p style="font-family: comic sans ms">18 yo Isabella Guzman brutally stabbed her mom to death allegedly because her mom abused her, in Aurora in 2013 for which she became TikTok famous & got sentnced to a mental hospital after her insanity plea was accepted</p></center>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=8zNkmlf9G90"><img src="https://i2-prod.mirror.co.uk/incoming/article12495327.ece/ALTERNATES/s615/50-years-since-the-beginning-of-the-end-for-Kray-twins-as-their-empire-began-to-crumble-following-ar.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Kray Twins</center></h4></ins>
+      <center><p style="font-family: comic sans ms">Identical twin brothers & gangsters Ronald "Ronny" & Reginald "Reggy" Kray killed George Cornell in 1969 & Jack McVity in 1970 for which they got life in prison without the possibility of parole. Ronny died of a heart attack in 1995 & Reggy was released from prison on compassionate grounds in August 2000, 5 weeks before he died of bladder cancer</p></center>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=X913nSHIqqY"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/JamesSmithUKMurdererExecuted1962.jpg/220px-JamesSmithUKMurdererExecuted1962.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>James Smith</center></h4></ins>
+      <center><p style="font-family: comic sans ms">James Patterson Smith tortured & killed 17 yo Kelly Anne Bates after grooming her for 3 years. He was sentenced to life in prison with the possibility of parole after 20 years</p></center>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=n1LZj0IylWM"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Gertrude-baniszewski002.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Gertrude Baniszewski & her Accomplices</h4></ins></center>
+      <center><p style="font-family: comic sans ms">Gertrude Baniszewski tortured & killed 16 yo Sylvia Likens after months of abuse in Indiana in 1965 for which she was sentenced to life in prison with the possibility of parole after 20 years & was freed in 1985 while Paula, Gertrude's daughter spent 7 years in jail before being released in 1972. 2 neighborhood boys Coy Hubbard & Richard Hobbs who also participated in the torture, spent 2 years in juvy before being paroled in 1968</p></center>
+    </div>
+  </div>
+  <div class="column Others">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=95tXdDdmDks"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/8/8f/Suzane-von-richthofen.jpg/170px-Suzane-von-richthofen.jpg" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Suzane von Richthofen</h4></ins></center>
+      <center><p style="font-family: comic sans ms">19 yo Brazilian woman Suzane von Richthofen, her forbidden 21 yo boyfriend Daniel Cravinhos & Daniel's older brother killed Suzane's parents to get their money as inheritance so that she could live with Daniel</p></center>
+    </div>
+  </div>
+ 
+ <div class="column Ongoing Cases">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=It1y9bu9VUA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJ046ztQqf9mrczB1ffriYZiiDSCEkOZib__6ns3YbZMXsM2KmUqd99WLCXc5WhcXVeY&usqp=CAU" alt="Others" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Zach Latham</center></h4></ins>
+      <center><p style="font-size=25%; font-family: comic sans ms">(Ongoing Case)</p></center>
+      <center><p style="font-family: comic sans ms">18 yo Zachary Latham stabbed his neighbor & the neighbor's 17 yo son to death over an arguement in early 2021 while his wife filmed all of it</p></center>
+    </div>
+  </div>
+
+  <div class="column Massacers, Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=D9mUpUHk3nE"><img src="https://i.ytimg.com/vi/U5QG-I9Ced0/mqdefault.jpg" alt="Massacers, Juveniles" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Columbine High School Massacre</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Columbine High School Massacre was a school shooting & attempted bombing that happened in April 1999 at Columbine High School in Colorado US. The perpetrators, 12th graders Eric Harris & Dylan Klebold killed 12 students & 1 teacher before committing suicide</center></p>
+    </div>
+  </div>
+  <div class="column Massacers, Juveniles">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/STEM_School_Highlands_Ranch_shooting"><img src="https://i.ytimg.com/vi/1IuI84RKh90/maxresdefault.jpg" alt="Massacers, Juveniles" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>STEM Hight School Shooting</ins></center></h4>
+      <center><p style="font-family: comic sans ms">18 yo Devon Erickson & 16 yo transgender boy Alec McKinny shot up their high school in Colorado in March 2019 killing 1 student & injuring 8 others for which Devon life in prison without parole + 1,282 years while Alec got life in prison with the possibility of parole after 40 years</center></p>
+    </div>
+  </div>
+   <div class="column Massacers, Juveniles, Ongoing Cases">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Oxford_High_School_shooting"><img src="https://static.independent.co.uk/2021/12/02/16/MICHIGAN-TIROTEO_ESCUELA_36997.jpg?quality=75&width=1200&auto=webp" alt="Massacers, Juveniles, Ongoing Cases" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Oxford Hight School Shooting</ins></center></h4>
+      <p style="font-family: comic sans ms"><center>(Ongoing Case)</center></p>
+      <center><p style="font-family: comic sans ms">15 yo Ethan Crumbly shot up his high school in Michigan in November 2021</center></p>
+    </div>
+  </div>
+  <div class="column Massacers, Juveniles">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=xi8A2sjY5so"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCz0M5nQS-mz-SQPrvqr4V48YEnUEKlte41VRNNQ7E5mLMb9U-U389jVWEjk4MNsAv7Q&usqp=CAU" alt="Massacers, Juveniles" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Broken Arrow Massacer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">In July 2015, 5 members of the Bever family were shot to death in Broken Arrow, Oklahoma. 2 members of the family, 2 & 13 yo girls survived, the latter of whom identified 2 of her older brothers, 18 yo Robert & 16 yo Michael Bever as the assailants. Michael & Robert allegedly wanted to become serial killers & were inspired by Eric Harris & Dylan Klebold</center></p>
+    </div>
+  </div>
+  <div class="column Massacers, Juveniles">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Nicholas_Waggoner_Browning"><img src="https://patch.com/img/cdn/users/50010/2012/02/raw/e792fa93b922e6df8df0f79d66c4d728.jpg" alt="Massacers, Juveniles" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Nicholas Browning</ins></center></h4>
+      <center><p style="font-family: comic sans ms">15 yo Nicholas Waggoner Browning killed his parents & 2 younger brothers in February 2008 for which he got 4 life sentences with the possibility of parole after 23 years</center></p>
+    </div>
+  </div>
+  <div class="column Massacers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=BrVbs-N-LPc"><img src="https://thenetline.com/wp-content/uploads/2021/09/Stockdale-family-1.jpg" alt="Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>The Stockdale Family</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Jacob Stockdale killed his mom Kathy & brother James Stockdale allegedly due "to his lack of free will". The family appeared on ABC's Wife Swap years earlier.</center></p>
+    </div>
+  </div>
+  <div class="column Massacers">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Candel%C3%A1ria_massacre"><img src="https://www.aljazeera.com/wp-content/uploads/2013/07/20137239252191734_20.jpeg?quality=80&fit=680%2C450" alt="Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Candelária Massacer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Candelária massacer was a mass killing in Rio de Janeiro, Brazil, in July 1993. During the night, 8 homeless people (6 of whom were minors) were killed by a group of men beside the Candelária Church for which 2 people were effectively sentenced to life in prison without parole</center></p>
+    </div>
+  </div>
+ <div class="column Massacers">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Virginia_Tech_shooting"><img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2011/3/30/1301469109662/Video-grab-of-Cho-Seung-h-007.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=dc492b8abb8bd6f71ec8c10ad204d61b" alt="Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Virginia Tech Shooting</ins></center></h4>
+      <center><p style="font-family: comic sans ms">The Virginia Tech shooting was a spree shooting that occurred in April 2007 comprising 2 attacks on the campuses of the Virginia Polytechnic Institute & State University in Blacksburg. The attacks were carried out by 23 yo Seung - Hui Cho who was a senior at Virginia Tech</center></p>
+    </div>
+  </div>
+  <div class="column Massacers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=xVlg-Mbgw2k"><img src="https://static.ffx.io/images/$zoom_0.222%2C$multiply_0.4431%2C$ratio_1.5%2C$width_756%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/b2699ff87368b399afa00fe3cab5d2dd300f0bc2" alt="Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Lin Family Massacer</ins></center></h4>
+      <center><p style="font-family: comic sans ms">47 yo Lian Bin "Robert" Xy blugened his brother's family to death in July 2009 after being jealous of the success of his 45 yo brother Min Lin's new agency & also being attracted to Min's then 15 yo daughter Jun "Brenda" Lin. He got 5 life sentences without parole</center></p>
+    </div>
+  </div>
+  <div class="column Massacers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=mS2Deml_xBok"><img src="https://imgix.ranker.com/user_node_img/50079/1001571764/original/pierre-dale-selby-was-executed-by-lethal-injection-in-1987-photo-u2?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375" alt="Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Hi - Fi Murders</ins></center></h4>
+      <center><p style="font-family: comic sans ms">William Andrews, Keith Leon Roberts & Pierre Dale Selby (pictured above) tortured & killed 3 people & severely injured 2 people in a botched armed robbery of a home audio for which they were sentenced to death.</center></p>
+    </div>
+  </div>
+    <div class="column Massacers">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=hv-dCHtWN5w"><img src="https://www.reuters.com/resizer/E1U_aMS7w094Y7b8lAv_38mZxLU=/1200x1500/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/NZTZCRLXFZJAHGXBFIRMASLO7A.jpg" alt="Massacers" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>ChristChurch Mosque Shootings</ins></center></h4>
+      <center><p style="font-family: comic sans ms">28 yo racist white American Brenton Harrison Tarrant shot up 2 mosques in March 2019 killing 50 people & injuring over 40 for which he got life in prison without parole</p></center>
+    </div>
+  </div>
+  
+  <div class="column Hijackings">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=m8zK4Spu5vw"><img src="https://p3-tt-ipv6.byteimg.com/origin/pgc-image/2c0fa597a8904bb39681de70b0dea8c7.jpg" alt="Hijackings" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Aeroflot 3739</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Aeroflot Flight 3739 was a Soviet domestic passenger flight from Irkutsk to Leningrad with a stopover in Kurgan. In March 1988, after the Tupolev Tu - 154 operating the flight had left Kurgan, it was hijacked by the Ovechkin family who wanted to defect from the Soviet Union</center></p>
+    </div>
+  </div>
+  <div class="column Hijackings">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=bn64AyrHe4Q"><img src="https://cdn.britannica.com/33/129733-050-AF95D301/Smoke-flames-twin-towers-attacks-World-Trade-September-11-2001.jpg" alt="Hijackings" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>9/11</ins></center></h4>
+      <center><p style="font-family: comic sans ms">9/11 attacks were a series of 4 coordinated terrorist attacks by the militant Islamist extremist network al - Qaeda against the US on September 11, 2001. They hijacked 4 planes & crashed 2 into the WTC</center></p>
+    </div>
+  </div>
+
+<div class="column Honor Killings">
+    <div class="content">
+    <a href="https://en.wikipedia.org/wiki/Manoj%E2%80%93Babli_honour_killing_case"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Manoj_Banwala_%2823%29_and_Babli_%2819%29%2C_after_their_marriage%2C_April_2007.jpg/210px-Manoj_Banwala_%2823%29_and_Babli_%2819%29%2C_after_their_marriage%2C_April_2007.jpg" alt="Honor Killings" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Manoj - Bably Honor Killings</ins></center></h4>
+      <center><p style="font-family: comic sans ms">21 yo Manoj & 19 yo Bably were killed by Bably's mom, brother & uncles in 2007 in Haryana after they ran away & married each other despite societal disapproval. The killers were given the death sentence</center></p>
+    </div>
+  </div>
+  <div class="column Honor Killings">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=98JWUtdj_Vg"><img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Kohistani_girls.jpg" alt="Honor Killings" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>2012 Kohistan video case</ins></center></h4>
+      <center><p style="font-family: comic sans ms">This was the murder of 5 tribal girls & a boy in Pakistan after videos of them clapping singing & dancing got leaked onto the internet. The perpetrators were eventually caught & given life in prison</center></p>
+    </div>
+  </div>
+  <div class="column Honor Killings">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=Qn-VhFHkUoY"><img src="https://hotlifestylenews.com/wp-content/uploads/2020/09/ccelebritiesNINTCHDBPICT000500232971-5-860x280.jpg" alt="Honor Killings" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Mohammed Saleh Ali, Omar Hussain & Mohamad Hama</ins></center></h4>
+      <center><p style="font-family: comic sans ms">They killed 20 yo Iraqi woman Banaz Mahmod after she tried to leave her abusive husband in 2006 for which they were sentenced to 22 years in jail</center></p>
+    </div>
+  </div>
+  <div class="column Honor Killings, Ongoing Cases">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=1EUfxrtFGzA"><img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Yaser_Abdel_Said.png" alt="Honor Killings, Ongoing Cases" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Yaser Said</ins></center></h4>
+      <center><p style="font-family: comic sans ms">(Ongoing Case)</center></p>
+      <center><p style="font-family: comic sans ms">Yaser Said shot his 2 teenage daughters (18 yo Amina & 17 yo Sarah) to death, allegedly for Amina having a boyfriend & planning to run away to Las Vegas with him, after sexually abusing them for years. He then evaded justice for 12 years by being a fugitive until he was eventually caught in August 2020</center></p>
+    </div>
+  </div>
+
+<div class="column In Self - Defence">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=CeUoe6_aQD4"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gypsy-rose-abc-1554312942.jpg?resize=480:*" alt="In Self - Defence" style="width:100%"></a>
+      <h4 style="font-family: comic sans ms"><center><ins>Gypsy Rose Blanchard</ins></center></h4>
+      <center><p style="font-family: comic sans ms">Gypsy Rose Blanchard & her boyfriend Nicholas Godejohn killed her mother in self defence who was suffering from Munchausen by Proxy. She's now serving her 10 year prison sentence after pleading guilty to 2nd degree murder</center></p>
+    </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script></body></html>
